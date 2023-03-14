@@ -12,12 +12,12 @@ sens = analogio.AnalogIn(board.A0)
 def tempOut(x):
     if x >27:
         return "hot"
-    elif x < 20:
+    elif x < 26:
         return "cold"
     else:
         return "nice"
 while True:
-    val = (((sens.value/19859.0909091)*1000)-500)/10
+    val = (((sens.value * 3.3/65535)*1000)-500)/10
     lcd.set_cursor_pos(0,0)
 
     lcd.print( tempOut(val))
@@ -26,5 +26,4 @@ while True:
     time.sleep(.5)
     lcd.clear()
     
-    
-    print(round(val))
+    print(round(val,2))

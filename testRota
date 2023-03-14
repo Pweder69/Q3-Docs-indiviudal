@@ -1,0 +1,20 @@
+import rotaryio
+import time
+import board
+enc = rotaryio.IncrementalEncoder(board.D9, board.D8,2)
+last_position = None
+curPos = 1
+
+def retEnc(x):
+    array = ["stop","caution","go"]
+    if x% 3 ==0:
+        return array[2]
+    if x %2 ==0:
+        return array[1]
+    #if x %1 ==0:
+    #    return array[0]
+
+
+while True:
+    print(f"{retEnc(enc.position)} {enc.position}")
+        
