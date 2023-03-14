@@ -18,8 +18,11 @@ def tempOut(x):
         return "nice"
 while True:
     val = (((sens.value/19859.0909091)*1000)-500)/10
+    lcd.set_cursor_pos(0,0)
+
     lcd.print( tempOut(val))
-    lcd.print(str(val))
+    lcd.set_cursor_pos(1,0)
+    lcd.print(f"temp in C: {round(val,2)}")
     time.sleep(.5)
     lcd.clear()
     
