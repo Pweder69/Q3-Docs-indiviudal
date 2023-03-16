@@ -1,14 +1,27 @@
 import rotaryio
 import time
 import board
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+
 enc = rotaryio.IncrementalEncoder(board.D9, board.D8,2)
 last_position = None
+
 
 def retEnc(x):
     array = ["stop","caution","go"]
     return array[x%3]
 
 
+
+
 while True:
+    lcd.print(retEnc(enc.position()))
+    time.sleep(.05)
+    lcd.clear()
     print(f"{retEnc(enc.position)} {enc.position}")
         
