@@ -52,7 +52,7 @@ Sens val is the input from the temp sensor, that value is multiplied by 3.3 to g
 From [Jinho](https://github.com/Jpark27614/CircuitPython)
 
 ## Reflection 
-I feel like this assignment had its troubles with figuring out the calculation but managing the actual value was eazy and outputing to an LCD was only copy paste from previous assignments. I liked the idea of making us figure out these calculations and it was fun but not to hard if you understand what the documention the the adafruit website means. Generaly i would say this was a good reintoduction to LCDs and very basic logic. But the most important part was understanding and not copying the equation :)
+I feel like this assignment had its troubles with figuring out the calculation but managing the actual value was easy and outputing to an LCD was only copy paste from previous assignments. I liked the idea of making us figure out these calculations and it was fun but not to hard if you understand what the documention the the adafruit website means. Generaly i would say this was a good reintoduction to LCDs and very basic logic. But the most important part was understanding and not copying the equation :)
 
 # Rotary encoder
 ## Description and code explination
@@ -114,7 +114,7 @@ while True:
 
 # CHONKER OF A CODE
 ```
-The 2 Main functions of this code are "retEnc" and "BtnControl". Mainly focus on retEnc because BtnControl is only a debounce function that manages a button and has been documented many times [before](https://github.com/Pweder69/RobotArm/blob/master/README.md). This function is one of my favorite because its very short and in my opinion very clever. First i will explain the modulo oporator as represented in python as the precent symbol __%__. what it does is it devides 2 numbers and spits out the remainder __(ex... 5%3 = 2 bc remainder of 5/3 = 2)__ We use this on the value outputed by the encoder as it will output the same sequence reguardless of the size of the value conventently this value is the same as the index of the list of the items we must cycle. so we can just input the modulo of the encoder value to the index of the list another bonus is that it works even with negative number and reverses the order as well. Note that its very eazy to scale the cycle of items by just increasing the list and modulo for the future. 
+The 2 Main functions of this code are "retEnc" and "BtnControl". Mainly focus on retEnc because BtnControl is only a debounce function that manages a button and has been documented many times [before](https://github.com/Pweder69/RobotArm/blob/master/README.md). This function is one of my favorite because its very short and in my opinion very clever. First i will explain the modulo oporator as represented in python as the precent symbol __%__. what it does is it devides 2 numbers and spits out the remainder __(ex... 5%3 = 2 bc remainder of 5/3 = 2)__ We use this on the value outputed by the encoder as it will output the same sequence reguardless of the size of the value conventently this value is the same as the index of the list of the items we must cycle. so we can just input the modulo of the encoder value to the index of the list another bonus is that it works even with negative number and reverses the order as well. Note that its very easy to scale the cycle of items by just increasing the list and modulo for the future. 
 
 ## Evidence 
 <video src="https://user-images.githubusercontent.com/113122312/228878419-eeb6ee13-e4dc-4017-8130-15ca412da687.mov" data-canonical-src="https://user-images.githubusercontent.com/113122312/228878419-eeb6ee13-e4dc-4017-8130-15ca412da687.mov" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
@@ -128,7 +128,7 @@ The 2 Main functions of this code are "retEnc" and "BtnControl". Mainly focus on
 From jinho Park
 
 ## Reflection 
-This assignemnt was very fun and suprisingly eazy as with all code it seems eazy if you have the expericene to know tools like modulo and can make you life very eazy instead of just copying somone or making a complex logic tree for all cases of the encoder sequence. renewing on debounce functions was also nice 
+This assignemnt was very fun and suprisingly easy as with all code it seems easy if you have the expericene to know tools like modulo and can make you life very easy instead of just copying somone or making a complex logic tree for all cases of the encoder sequence. renewing on debounce functions was also nice 
 
 # Phtoto-Interrupter
 ## Description and Code
