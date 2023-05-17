@@ -1,10 +1,10 @@
 
 # Temp sensor
 ## Description and Code
-In this assignment we were soposed to change the output of an LCD by using a temp sensor.
+In this assignment, we were supposed to change the output of an LCD by using a temp sensor.
 
 ```python 
-    import time
+import time
 import board
 import analogio 
 from lcd.lcd import LCD
@@ -34,10 +34,10 @@ while True:
     
     print(round(val,2))
 ```
-The code is relativly simple the only part that offers some confusion is the the calculation     
+The code is relatively simple the only part that offers some confusion is the the calculation     
 __(sens.value * 3.3/65535)*1000)-500)/10__ 
 
-Sens val is the input from the temp sensor, that value is multiplied by 3.3 to get the "refrence voltage" and then devided by the max val of a 16 bit unassigned int because we are handling the output of an Analog pin witch does output an unassigned 16 bit int. The reason we do all this is to get the  voltage from the analog pin and deviding by 65535 gets us the relative amount of voltage to 1. The heavy work is done as we now have a voltage value now the rest of the equation is applied as we turn volts to milivolts subtract 500 and devide by 10 to get our degrees in C.
+Sens val is the input from the temp sensor, that value is multiplied by 3.3 to get the "reference voltage" and then divided by the max value of a 16-bit unassigned int because we are handling the output of an Analog pin which \ outputs an unassigned 16-bit int. The reason we do all this is to get the voltage from the analog pin and dividing by 65535 gets us the relative amount of voltage to 1. The heavy work is done as we now have a voltage value the rest of the equation is applied as we turn volts to millivolts subtract 500 and divide by 10 to get our degrees in C.
 
 ## Evidence 
 
@@ -52,11 +52,11 @@ Sens val is the input from the temp sensor, that value is multiplied by 3.3 to g
 From [Jinho](https://github.com/Jpark27614/CircuitPython)
 
 ## Reflection 
-I feel like this assignment had its troubles with figuring out the calculation but managing the actual value was easy and outputing to an LCD was only copy paste from previous assignments. I liked the idea of making us figure out these calculations and it was fun but not to hard if you understand what the documention the the adafruit website means. Generaly i would say this was a good reintoduction to LCDs and very basic logic. But the most important part was understanding and not copying the equation :)
+I feel like this assignment had its troubles with figuring out the calculation but managing the actual value was easy and outputting to an LCD was only copy paste from previous assignments. I liked the idea of making us figure out these calculations and it was fun but not too hard if you understand what the documentation on the Adafruit website means. Generally, i would say this was a good reintroduction to LCDs and very basic logic. But the most important part was understanding and not copying the equation :)
 
 # Rotary encoder
 ## Description and code explination
- In this assignment we were tasked with creating a sort of menue system for a LCD using a list or tupple.
+ In this assignment, we were tasked with creating a sort of menu system for an LCD using a list or tuple.
 ``` python
 import rotaryio
 import time
@@ -114,7 +114,7 @@ while True:
 
 # CHONKER OF A CODE
 ```
-The 2 Main functions of this code are "retEnc" and "BtnControl". Mainly focus on retEnc because BtnControl is only a debounce function that manages a button and has been documented many times [before](https://github.com/Pweder69/RobotArm/blob/master/README.md). This function is one of my favorite because its very short and in my opinion very clever. First i will explain the modulo oporator as represented in python as the precent symbol __%__. what it does is it devides 2 numbers and spits out the remainder __(ex... 5%3 = 2 bc remainder of 5/3 = 2)__ We use this on the value outputed by the encoder as it will output the same sequence reguardless of the size of the value conventently this value is the same as the index of the list of the items we must cycle. so we can just input the modulo of the encoder value to the index of the list another bonus is that it works even with negative number and reverses the order as well. Note that its very easy to scale the cycle of items by just increasing the list and modulo for the future. 
+The 2 Main functions of this code are "retEnc" and "BtnControl". Mainly focus on retEnc because BtnControl is only a debounce function that manages a button and has been documented many times [before](https://github.com/Pweder69/RobotArm/blob/master/README.md). This function is one of my favorites because it's very short and in my opinion very clever. First I will explain the modulo operator as represented in Python as the percent symbol __%__. what it does is it divides 2 numbers and spits out the remainder __(ex... 5%3 = 2 bc remainder of 5/3 = 2)__ We use this on the value outputted by the encoder as it will output the same sequence regardless of the size of the value, conveniently this value is the same as the index of the list of the items we must cycle. so we can just input the modulo of the encoder value to the index of the list another bonus is that it works even with negative numbers and reverses the order as well. Note that it's very easy to scale the cycle of items by just increasing the list and modulo for the future. 
 
 ## Evidence 
 <video src="https://user-images.githubusercontent.com/113122312/228878419-eeb6ee13-e4dc-4017-8130-15ca412da687.mov" data-canonical-src="https://user-images.githubusercontent.com/113122312/228878419-eeb6ee13-e4dc-4017-8130-15ca412da687.mov" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
@@ -125,15 +125,15 @@ The 2 Main functions of this code are "retEnc" and "BtnControl". Mainly focus on
 
 <img src="https://user-images.githubusercontent.com/113122312/228682209-61f189f5-6434-4f74-980b-c6ba4c7f70ba.png" alt="Screenshot 2023-03-29 6 29 21 PM" style="max-width: 100%;">
 
-From jinho Park
+From Jinho Park
 
 ## Reflection 
-This assignemnt was very fun and suprisingly easy as with all code it seems easy if you have the expericene to know tools like modulo and can make you life very easy instead of just copying somone or making a complex logic tree for all cases of the encoder sequence. renewing on debounce functions was also nice 
+This assignment was very fun and surprisingly easy as with all code it seems easy if you have the experience to know tools like modulo and can make your life very easy instead of just copying someone or making a complex logic tree for all cases of the encoder sequence. renewing on debounce functions was also nice 
 
-# Phtoto-Interrupter
+# Photo-Interrupter
 ## Description and Code
 
-For this assignment we are soposed to use monotomic time and sleep and the task is to print out when we get interuppted.
+For this assignment, we are supposed to use monatomic time and sleep and the task is to print out when we get interrupted.
 
 ``` python
 import time
@@ -168,4 +168,4 @@ From [river]()
 From [river](https://github.com/rivques/CircuitPython)
 
 # Reflection 
-This assignment was annoying not because it is hard but because the photointeruppters dont work 90% of the time. The code was simple to understand as just a debounce and interupt counter and the assignment was only difficult ot the extent of figuring out why photointeruppters dont work how they should  but after that it as very eazy.
+This assignment was annoying not because it is hard but because the photointeruppters don't work 90% of the time. The code was simple to understand as just a debounce and interrupt counter and the assignment was only difficult to the extent of figuring out why photointeruppters don't work how they should but after that, it was very easy.
