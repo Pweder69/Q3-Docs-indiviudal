@@ -7,8 +7,7 @@
 
 <br/>
 <br/>
-<br/>
-<br/>
+
 
 
 # Temp sensor
