@@ -1,3 +1,15 @@
+# Table of contents  
+* [Temp sensor](#temp-sensor)
+* [Rotary encoder](#rotary-encoder)
+* [Photo-Interrupter](#photo-interrupter)
+* [Onshape Certification](#onshape-certification)
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 # Temp sensor
 ## Description and Code
@@ -54,8 +66,11 @@ From [Jinho](https://github.com/Jpark27614/CircuitPython)
 ## Reflection 
 I feel like this assignment had its troubles with figuring out the calculation but managing the actual value was easy and outputting to an LCD was only copy paste from previous assignments. I liked the idea of making us figure out these calculations and it was fun but not too hard if you understand what the documentation on the Adafruit website means. Generally, i would say this was a good reintroduction to LCDs and very basic logic. But the most important part was understanding and not copying the equation :)
 
+<br/>
+<br/>
+
 # Rotary encoder
-## Description and code explination
+## Description and code explanation
  In this assignment, we were tasked with creating a sort of menu system for an LCD using a list or tuple.
 ``` python
 import rotaryio
@@ -130,6 +145,10 @@ From Jinho Park
 ## Reflection 
 This assignment was very fun and surprisingly easy as with all code it seems easy if you have the experience to know tools like modulo and can make your life very easy instead of just copying someone or making a complex logic tree for all cases of the encoder sequence. renewing on debounce functions was also nice 
 
+<br/>
+<br/>
+<br/>
+
 # Photo-Interrupter
 ## Description and Code
 
@@ -169,3 +188,28 @@ From [river](https://github.com/rivques/CircuitPython)
 
 # Reflection 
 This assignment was annoying not because it is hard but because the photointeruppters don't work 90% of the time. The code was simple to understand as just a debounce and interrupt counter and the assignment was only difficult to the extent of figuring out why photointeruppters don't work how they should but after that, it was very easy.
+
+<br/>
+<br/>
+
+# Onshape Certification
+The onshape certification was a test that we took that tested our skills in the CAD software onshape the goal of this was to give us documents proving our skills. We prepared for the test with several assignments/assemblies 
+
+## Evidence 
+
+<img src="https://i.imgur.com/ykJurJW.png" width=300>
+
+Onshape certification results 
+<br/>
+<br/>
+
+<img src="https://i.imgur.com/PHD6KC9.png" width =200> <img src="https://i.imgur.com/6IUZBE2.png" width =241>
+
+Although this practice wasn't complete it was a representation of what could be seen on the actual exam 
+
+<img src="https://i.imgur.com/nSMfJL2.png" width =200>
+<img src="https://i.imgur.com/95XRbZK.png" width =213>
+second example of practice assignments
+
+## Reflection 
+Although i don't like onshape this test was a good way to Prep for future large tests and also a way for me to practice onshape. Overall I am proud of my score considering that I am a "code demon" getting one question wrong on the actual modeling and just tanking from the multiple choice was good. I got a better score than both my brothers so bragging rights were definitely enjoyable. Finialy i for future me i would definitely recommend asking the other Onshapers in the class for help as they were very helpful during preparation. 
